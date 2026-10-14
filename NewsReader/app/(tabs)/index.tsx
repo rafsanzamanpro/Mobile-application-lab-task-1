@@ -96,3 +96,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
   },
 });
+
+
+//for confirmation that all file uploaded successfully
+

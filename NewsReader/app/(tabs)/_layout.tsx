@@ -6,19 +6,16 @@ export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
+        headerShown: false,
         tabBarActiveTintColor: "#0D9488",
         tabBarInactiveTintColor: "#94A3B8",
-        tabBarStyle: {
-          backgroundColor: "#FFFFFF",
-          borderTopColor: "#F1F5F9",
-        },
-        headerShown: false,
       }}
     >
       <Tabs.Screen
         name="(home)"
         options={{
           title: "Home",
+          tabBarLabel: "Home",
           tabBarIcon: ({ color, size }) => (
             <Ionicons
               name="newspaper-outline"
@@ -33,6 +30,7 @@ export default function TabLayout() {
         name="bookmarks"
         options={{
           title: "Bookmarks",
+          tabBarLabel: "Bookmarks",
           tabBarIcon: ({ color, size }) => (
             <Ionicons
               name="bookmark-outline"
@@ -40,6 +38,13 @@ export default function TabLayout() {
               color={color}
             />
           ),
+        }}
+      />
+
+      <Tabs.Screen
+        name="index"
+        options={{
+          href: null,
         }}
       />
     </Tabs>
