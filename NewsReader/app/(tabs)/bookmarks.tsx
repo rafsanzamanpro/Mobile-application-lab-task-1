@@ -16,7 +16,7 @@ export default function Bookmarks() {
     </SafeAreaView>
   );
 }
-
+// 
 const styles = StyleSheet.create({
   screen: { flex: 1, backgroundColor: "#F0F4F8" },
   content: {
